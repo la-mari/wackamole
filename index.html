@@ -60,7 +60,9 @@ function peep(){
   const hole = randomHole(holes);
   console.log(time, hole);
   hole.classList.add('up'); //take that hole and add up class to it
-
+  setTimeout(() => {
+    hole.classList.remove('up');
+  }, time);
 }
 </script>
 </body>
